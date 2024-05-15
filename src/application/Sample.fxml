@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <top>
+      <HBox prefHeight="555.0" prefWidth="885.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="555.0" prefWidth="291.0" styleClass="mainColor" stylesheets="@application.css">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="128.0" prefWidth="230.0">
+                     <opaqueInsets>
+                        <Insets bottom="17.0" right="15.0" />
+                     </opaqueInsets>
+                     <effect>
+                        <Glow />
+                     </effect>
+                     <children>
+                        <ImageView fitHeight="94.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                           <image>
+                              <Image url="@../../../../Desktop/New%20NEw/icons8-train-64.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+                  <Label alignment="CENTER" graphicTextGap="10.0" lineSpacing="4.0" prefHeight="103.0" prefWidth="258.0" style="-fx-text-fill: white;" text="WELCOME BACK" textAlignment="JUSTIFY" textFill="WHITE">
+                     <font>
+                        <Font name="Lucida Fax Regular" size="28.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="35.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Line endX="-64.70709991455078" endY="-0.8284515142440796" startX="-100.0" stroke="#f7f1f1" strokeWidth="3.0" translateX="120.0" translateY="-20.0" />
+                  <Label prefHeight="18.0" prefWidth="190.0" text="Nice to see you Here!!!" textFill="#fffcfc">
+                     <font>
+                        <Font name="Leelawadee UI Semilight" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="50.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <Label />
+            <BorderPane prefHeight="555.0" prefWidth="524.0" style="-fx-background-color: white;">
+               <top>
+                  <Label alignment="BOTTOM_CENTER" prefHeight="86.0" prefWidth="281.0" styleClass="textfillcolor" stylesheets="@application.css" text="My Metro" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font name="Kristen ITC" size="40.0" />
+                     </font>
+                  </Label>
+               </top>
+               <center>
+                  <VBox fx:id="signInForm" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: white;" stylesheets="@application.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;">
+                           <children>
+                              <ImageView fitHeight="43.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                                 <image>
+                                    <Image url="@../../../MyApp/src/log.png" />
+                                 </image>
+                                 <rotationAxis>
+                                    <Point3D />
+                                 </rotationAxis>
+                                 <HBox.margin>
+                                    <Insets bottom="30.0" left="60.0" right="20.0" top="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <TextField fx:id="inputName" onAction="#signIn" prefHeight="26.0" prefWidth="208.0" styleClass="custom-textfield">
+                                 <HBox.margin>
+                                    <Insets bottom="20.0" left="40.0" right="4.0" top="20.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="40.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;">
+                           <children>
+                              <ImageView fitHeight="43.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                                 <image>
+                                    <Image url="@../../../MyApp/src/user.png" />
+                                 </image>
+                                 <rotationAxis>
+                                    <Point3D />
+                                 </rotationAxis>
+                                 <HBox.margin>
+                                    <Insets bottom="30.0" left="60.0" right="20.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <PasswordField fx:id="inputPwd" onAction="#signIn" styleClass="custom-textfield" stylesheets="@application.css">
+                                 <HBox.margin>
+                                    <Insets left="40.0" />
+                                 </HBox.margin>
+                              </PasswordField>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: white;">
+                           <children>
+                              <RadioButton fx:id="btn_admin" mnemonicParsing="false" text="Admin">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="user" />
+                                 </toggleGroup>
+                                 <HBox.margin>
+                                    <Insets left="150.0" right="30.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Candara" size="13.0" />
+                                 </font>
+                              </RadioButton>
+                              <RadioButton fx:id="btn_user" mnemonicParsing="false" text="User" toggleGroup="$user">
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Candara" size="14.0" />
+                                 </font>
+                              </RadioButton>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <Button fx:id="btnLogin1" mnemonicParsing="false" onAction="#signIn" styleClass="custom-btn" stylesheets="@application.css" text="Login">
+                           <VBox.margin>
+                              <Insets left="220.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Label fx:id="sign_up" onMouseClicked="#newSignUP" text="Sign up " textFill="#4911d7">
+                           <VBox.margin>
+                              <Insets left="250.0" top="30.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Dubai Regular" size="12.0" />
+                           </font>
+                        </Label>
+                        <Line endX="-61.50711441040039" endY="-4.050135612487793E-4" startX="-100.0" stroke="#0e17b7" translateX="250.0" />
+                     </children>
+                  </VBox>
+               </center>
+               <left>
+                
+               </left>
+               <right>
+                  <VBox prefHeight="200.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+               </right>
+            </BorderPane>
+            <Label fx:id="exit" onMouseClicked="#Exit" text="x" textFill="#00000086" translateX="30.0">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children></HBox>
+   </top>
+</BorderPane>

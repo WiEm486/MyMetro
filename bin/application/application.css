@@ -1,0 +1,131 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.custom-textfield {
+    
+    -fx-background-radius: 20px;
+    
+    -fx-border-radius: 20px;
+    -fx-border-width: 1px;
+    -fx-prompt-text-fill: #ccc;
+    -fx-background-insets: 0 0 1 0;
+    -fx-border-insets: 0 0 1 0;
+     -fx-effect: dropshadow(three-pass-box,  rgba(0, 128, 255, 0.5), 4, 0.2, 1, 2);
+     -fx-pref-width: 300px;
+       -fx-pref-height: 40px;
+}
+
+
+
+.custom-textfield2 {
+    
+    -fx-background-radius: 20px;
+    
+    -fx-border-radius: 20px;
+    -fx-border-width: 1px;
+    -fx-prompt-text-fill: #ccc;
+    -fx-background-insets: 0 0 1 0;
+    -fx-border-insets: 0 0 1 0;
+     -fx-effect: dropshadow(three-pass-box,  rgba(0, 128, 255, 0.5), 4, 0.2, 1, 2);
+ 
+}
+
+.custom-btn{
+  -fx-background-color:linear-gradient(#8e2de2, #4a00e0);
+     -fx-background-radius: 10px;
+     -fx-font-size: 14px;
+        -fx-text-fill: white;
+          -fx-pref-width: 100px;
+          -fx-pref-height: 35px;
+}
+.custom-text
+{
+	  color: purple;
+    text-decoration: underline;
+}
+/* Selected radio button */
+.radio-button:selected .radio {
+	-fx-background-color:  linear-gradient(to bottom right, #00caff, #7f00ff);
+  -fx-border-color: #0078d7;
+  -fx-background-radius: 50%;
+}
+
+/* Unselected radio button */
+.radio-button .radio {
+  -fx-background-color: #fff;
+  -fx-border-color: linear-gradient(to bottom right, #00caff, #7f00ff);
+  -fx-background-radius: 50%;
+}
+
+/* Radio button dot */
+.radio-button .radio .dot {
+	-fx-background-color:  linear-gradient(to bottom right, #00caff, #7f00ff);
+  -fx-background-radius: 50%;
+  -fx-padding: 2px;
+  -fx-min-width: 15px;
+  -fx-min-height: 15px;
+}
+
+/* Radio button label */
+.radio-button .label {
+  -fx-padding: 0 0 0 10px;
+  -fx-font-size: 10px;
+  -fx-text-fill: #333;
+}
+.custom-Box1{
+	-fx-background-color:  linear-gradient(to bottom right, #FDC830, #F37335);
+	   -fx-background-radius: 15px;
+	 
+    -fx-effect: dropshadow( gaussian ,  #F37335 , 6,0,0,0.7 );
+}
+
+.custom-Box3{
+	-fx-background-color:  linear-gradient(to bottom right, #ec008c, #fc6767);
+	   -fx-background-radius: 15px;
+	    -fx-effect: dropshadow( gaussian ,  #f80759 , 6,0,0,0.7 );
+}
+.custom-Box2{
+	-fx-background-color:  linear-gradient(to bottom right, #00caff, #0072ff);
+	   -fx-background-radius: 15px;
+	   -fx-effect: dropshadow( gaussian ,  #00caff , 6,0,0,0.7 );
+}
+
+.custom-Box4{
+	-fx-background-color:  linear-gradient(to bottom right, #FFDD00, #FBB034);
+	   -fx-background-radius: 15px;
+	   	   -fx-effect: dropshadow( gaussian ,  #799F0C , 6,0,0,0.7 );
+}
+
+.custom-nav-btn
+{	-fx-background-color:white;
+	
+	  -fx-min-width: 180px;
+  -fx-min-height: 40px;
+ 
+    -fx-background-radius: 20px;
+   -fx-text-fill:#7C7C7C
+   
+   
+
+}
+
+.hboxStyle{
+	-fx-background-color:white;
+
+}
+.color{
+	-fx-text-fill:  linear-gradient(to bottom right, #FDC830, #F37335);
+}
+.mainColor{
+		-fx-background-color: linear-gradient(to bottom right, #00caff, #7f00ff);
+}
+.textfillcolor{
+			-fx-text-fill: linear-gradient(to bottom right, #00caff, #0072ff);
+}
+.bordergredient{
+		-fx-border-color: linear-gradient(to bottom right, #00caff, #7f00ff);
+}
+
+@font-face {
+    font-family: MarckScript;
+    src: url('/MarckScript-Regular.ttf');
+}
